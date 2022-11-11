@@ -1,7 +1,7 @@
-export default function Home() {
+export default function Subs() {
   return (
-    <div id="Home">
-      Home
+    <div id="Subs">
+      Subs
       <button type="button" className="btn btn-danger">Test</button>
     </div>
   );
