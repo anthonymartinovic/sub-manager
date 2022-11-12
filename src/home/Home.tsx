@@ -1,8 +1,9 @@
+import logo from '../assets/images/sub-manager-logo.png';
+
 export default function Home() {
   return (
-    <div id="Home">
-      Home
-      <button type="button" className="btn btn-danger">Test</button>
+    <div id="Home" className="container d-flex flex-column align-items-center">
+      <img src={logo} alt="Sub Manager"></img>
     </div>
   );
 }

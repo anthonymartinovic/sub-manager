@@ -3,7 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 export default function Shell() {
   return (
     <div id="Shell" className="h-100">
-      <ul className="nav nav-tabs pt-4">
+      <ul className="nav nav-tabs pt-2 px-2">
         <li className="nav-item">
           <NavLink to="/" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>Home</NavLink>
         </li>

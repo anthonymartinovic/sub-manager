@@ -5,9 +5,8 @@ import {
 } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.css';
-// Put any other imports below so that CSS from your
-// components takes precedence over default styles.
-import './index.css';
+import './assets/stylesheets/theme.scss';
+import './index.scss';
 
 import reportWebVitals from './reportWebVitals';
 import router from './routes';

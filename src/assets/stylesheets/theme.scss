@@ -1,0 +1,16 @@
+// SUB MANAGER THEME
+$theme-colors: (
+  'red': #D54747,
+  'white': #FFFFFF,
+  'black': #282828
+);
+
+@each $color, $hex in $theme-colors {
+  .theme-#{$color}-text {
+    color: $hex;
+  }
+
+  .theme-#{$color}-bg {
+    background-color: $hex;
+  }
+}
