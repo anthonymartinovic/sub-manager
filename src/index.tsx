@@ -6,7 +6,7 @@ import {
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './assets/stylesheets/theme.scss';
-import './index.scss';
+import './assets/stylesheets/index.scss';
 
 import reportWebVitals from './reportWebVitals';
 import router from './routes';

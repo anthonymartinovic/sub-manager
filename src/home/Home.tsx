@@ -1,4 +1,4 @@
-import logo from '../assets/images/sub-manager-logo.png';
+import logo from '../assets/images/logo.png';
 
 export default function Home() {
   return (

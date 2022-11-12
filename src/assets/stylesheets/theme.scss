@@ -1,16 +1,27 @@
-// SUB MANAGER THEME
 $theme-colors: (
   'red': #D54747,
   'white': #FFFFFF,
   'black': #282828
 );
 
-@each $color, $hex in $theme-colors {
-  .theme-#{$color}-text {
+@each $name, $hex in $theme-colors {
+  .theme-#{$name}-text {
     color: $hex;
   }
 
-  .theme-#{$color}-bg {
+  .theme-#{$name}-bg {
     background-color: $hex;
   }
+}
+
+/************
+SUB MANAGER NATIVE/BOOTSTRAP OVERRIDES
+************/
+a,
+.nav-link,
+a:hover,
+.nav-link:hover,
+a:active,
+.nav-tabs .nav-link.active {
+  color: map-get($map: $theme-colors, $key: 'red');
 }

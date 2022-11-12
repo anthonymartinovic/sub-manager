@@ -1,11 +1,16 @@
 import { NavLink, Outlet } from "react-router-dom";
+import logoTrimmed from '../assets/images/logo-trimmed.png';
+
+const stylesTest = { width: '42px', height: '21px' };
 
 export default function Shell() {
   return (
     <div id="Shell" className="h-100">
       <ul className="nav nav-tabs pt-2 px-2">
         <li className="nav-item">
-          <NavLink to="/" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>Home</NavLink>
+          <NavLink to="/" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
+            <img src={logoTrimmed} alt="Sub Manager" style={stylesTest}></img>
+          </NavLink>
         </li>
         <li className="nav-item">
           <NavLink to="/subs" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>Subs</NavLink>
