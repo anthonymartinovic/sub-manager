@@ -15,7 +15,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: (
-            <React.Suspense>
+            <React.Suspense fallback={<span>Loading...</span>}>
               <Home />
             </React.Suspense>
         ),
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
       {
         path: 'subs',
         element: (
-            <React.Suspense>
-              <Home />
+            <React.Suspense fallback={<span>Loading...</span>}>
+              <Subs />
             </React.Suspense>
         ),
       },
