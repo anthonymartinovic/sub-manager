@@ -4,9 +4,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+// CSS imports
 import 'bootstrap/dist/css/bootstrap.css';
 import './assets/stylesheets/theme.scss';
 import './assets/stylesheets/index.scss';
+
+// JS imports
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import reportWebVitals from './reportWebVitals';
 import router from './routes';
